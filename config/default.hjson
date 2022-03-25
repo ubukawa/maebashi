@@ -3,12 +3,15 @@ un-s: {
   Z: 0
   relations: [
    un_base::vectortile::custom_planet_land_08_a
+   un_base::vectortile::custom_planet_ocean_08_a
    un_base::vectortile::un_glc30_global_lc_ss_a
    un_base::vectortile::unmap_bndl_l
    un_base::vectortile::unmap_bndl05_l
    un_base::vectortile::unmap_bndl25_l
    un_base::vectortile::custom_ne_rivers_lakecentrelines_l
    un_base::vectortile::unmap_wbya10_a
+   un_base::vectortile::unmap_dral10_a
+   un_base::vectortile::un_glc30_global_lc_ss_a
    un_base::vectortile::unmap_bnda_label_03_p
    un_base::vectortile::unmap_bnda_label_04_p
    un_base::vectortile::unmap_bnda_label_05_p
@@ -17,6 +20,7 @@ un-s: {
    un_base::vectortile::unmap_phyp_label_06_p
    un_base::vectortile::unmap_phyp_p
    un_base::vectortile::unmap_popp_p
+   un_base::vectortile::custom_ne_10m_bathymetry_a
    ]
   mbtilesDir: small_tiles
   propertyBlacklist: [

@@ -68,31 +68,13 @@ const lut = {
     delete f.properties['objectid']
     return f
   },
-  un_glc30_global_lc_ss_a: f => {
+  custom_planet_ocean_08_a: f => {
     f.tippecanoe = {
-      layer: 'landcover',
-      minzoom: 3,
-      maxzoom: 5
-    }
-  if (f.properties.gridcode == 20) {
-  f.tippecanoe.minzoom = 2
-  }
-  if (f.properties.gridcode == 20 || f.properties.gridcode == 30) {
-    delete f.properties['objectid']
-    delete f.properties['objectid_1']
-    return f
-  } else {
-    return null 
-  }
-  },
-  custom_ne_10m_bathymetry_a: f => {
-    f.tippecanoe = {
-      layer: 'bathymetry',
-      minzoom: 2,
+      layer: 'ocean',
+      minzoom: 0,
       maxzoom: 5
     }
     delete f.properties['objectid']
-    delete f.properties['fid_1']
     return f
   },
   unmap_bndl_l: f => {
@@ -167,6 +149,33 @@ const lut = {
     delete f.properties['objectid']
     delete f.properties['fid_1']
     return f
+  },
+  unmap_dral10_l: f => {
+    f.tippecanoe = {
+      layer: 'dral10',
+      minzoom: 2,
+      maxzoom: 5
+    }
+    delete f.properties['objectid']
+    delete f.properties['fid_1']
+    return f
+  },
+  un_glc30_global_lc_ss_a: f => {
+    f.tippecanoe = {
+      layer: 'landcover',
+      minzoom: 3,
+      maxzoom: 5
+    }
+  if (f.properties.gridcode == 20) {
+  f.tippecanoe.minzoom = 2
+  }
+  if (f.properties.gridcode == 20 || f.properties.gridcode == 30 || f.properties.gridcode == 80) {
+    delete f.properties['objectid']
+    delete f.properties['objectid_1']
+    return f
+  } else {
+    return null 
+  }
   },
   unmap_bnda_label_03_p: f => {
     f.tippecanoe = {
@@ -361,6 +370,16 @@ if (f.properties.type == 4 && !/Sea|Ocean|Gulf/.test(f.properties.name) ){
 f.properties.display = 1
 }
 //edit 2021-01-27 ends
+    return f
+  },
+  custom_ne_10m_bathymetry_a: f => {
+    f.tippecanoe = {
+      layer: 'bathymetry',
+      minzoom: 2,
+      maxzoom: 5
+    }
+    delete f.properties['objectid']
+    delete f.properties['fid_1']
     return f
   },
   unmap_popp_p: f => {
