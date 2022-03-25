@@ -1,7 +1,7 @@
 source
 ================
 
-There are 34 style layers. (Lower layer in json comes upper in the map.)
+There are 18 source views/tables. (Lower layer in json comes upper in the map.)
 
 
 List of Source Layers
