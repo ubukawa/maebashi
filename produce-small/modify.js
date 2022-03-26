@@ -143,7 +143,7 @@ const lut = {
   unmap_wbya10_a: f => {
     f.tippecanoe = {
       layer: 'watera-s',
-      minzoom: 2,
+      minzoom: 1,
       maxzoom: 5
     }
     delete f.properties['objectid']
