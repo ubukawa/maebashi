@@ -6,9 +6,10 @@ layers:
   - !!inc/file layers/base/background.yml
   - !!inc/file layers/base/pg-landmass.yml
   - !!inc/file layers/base/pg-ocean.yml
-  - !!inc/file layers/ls-coastline.yml
-  - !!inc/file layers/ls-dral10.yml
+#  - !!inc/file layers/ls-dral10.yml
+  - !!inc/file layers/ls-river.yml
   - !!inc/file layers/pg-urban.yml
+  - !!inc/file layers/ls-coastline.yml
   - !!inc/file layers/ls-adm-autonomous-halo.yml
   - !!inc/file layers/ls-adm-ISAO-halo.yml
   - !!inc/file layers/ls-adm-autonomous.yml
