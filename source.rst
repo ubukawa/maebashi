@@ -1,7 +1,7 @@
 source
 ================
 
-There are 18 source views/tables. (Lower layer in json comes upper in the map.)
+There are 17 source views/tables. (Lower layer in json comes upper in the map.)
 
 
 List of Source Layers
@@ -26,34 +26,32 @@ List of Source Layers
 +-------+-------------------------------------+-------+-----------+----------------+------+-------+-------------------------------------+
 | 7     | unmap_wbya10_a                      | area  | Hydro     | watera-s       | 1    | 5     |                                     |
 +-------+-------------------------------------+-------+-----------+----------------+------+-------+-------------------------------------+
-| 8     | unmap_dral10_l                      | line  | Hydro     | dral10         | 2    | 5     |                                     |
-+-------+-------------------------------------+-------+-----------+----------------+------+-------+-------------------------------------+
-| 9     | un_glc30_global_lc_ss_a             | area  | Landuse   | landcover      | 2    | 5     | gridcode 20, 30 and 80 only.        |
+| 8     | un_glc30_global_lc_ss_a             | area  | Landuse   | landcover      | 2    | 5     | gridcode 20, 30 and 80 only.        |
 |       |                                     |       |           |                |      |       | minz is 3 for gridcode 30 and 80.   |
 +-------+-------------------------------------+-------+-----------+----------------+------+-------+-------------------------------------+
-| 10    | unmap_bnda_label_03_p               | point | Labels    | lab_cty        | 1    | 1     | delete the futures with status == 1 |
+| 9     | unmap_bnda_label_03_p               | point | Labels    | lab_cty        | 1    | 1     | delete the futures with status == 1 |
 +-------+-------------------------------------+-------+-----------+----------------+------+-------+-------------------------------------+
-| 11    | unmap_bnda_label_04_p               | point | Labels    | lab_cty        | 2    | 2     | delete the futures with status == 1 |
+| 10    | unmap_bnda_label_04_p               | point | Labels    | lab_cty        | 2    | 2     | delete the futures with status == 1 |
 +-------+-------------------------------------+-------+-----------+----------------+------+-------+-------------------------------------+
-| 12    | unmap_bnda_label_05_p               | point | Labels    | lab_cty        | 3    | 3     | delete the futures with status == 1 |
+| 11    | unmap_bnda_label_05_p               | point | Labels    | lab_cty        | 3    | 3     | delete the futures with status == 1 |
 +-------+-------------------------------------+-------+-----------+----------------+------+-------+-------------------------------------+
-| 13    | unmap_bnda_label_06_p               | point | Labels    | lab_cty        | 4    | 5     | delete the futures with status == 1 |
+| 12    | unmap_bnda_label_06_p               | point | Labels    | lab_cty        | 4    | 5     | delete the futures with status == 1 |
 +-------+-------------------------------------+-------+-----------+----------------+------+-------+-------------------------------------+
-| 14    | unmap_phyp_p                        | point | Labels    | phyp_label     | 5    | 5     | type_code==4 and name does not      |
+| 13    | unmap_phyp_p                        | point | Labels    | phyp_label     | 5    | 5     | type_code==4 and name does not      |
 |       |                                     |       |           |                |      |       | include Sea, Ocean, nor Gulf.       |
 +-------+-------------------------------------+-------+-----------+----------------+------+-------+-------------------------------------+
-| 15    | unmap_phyp_label_04_p               | point | Labels    | lab_water      | *    | 3     | minz is basedon annotationclassid.  |
+| 14    | unmap_phyp_label_04_p               | point | Labels    | lab_water      | *    | 3     | minz is basedon annotationclassid.  |
 |       |                                     |       |           |                |      |       | minz is 1 for the value 0 and 1.    |
 +-------+-------------------------------------+-------+-----------+----------------+------+-------+ minz is 2 for the value 3.          |
-| 16    | unmap_phyp_label_06_p               | point | Labels    | lab_water      | 4    | 5     | minz is 3 for the value 2, 4, 5.    |
+| 15    | unmap_phyp_label_06_p               | point | Labels    | lab_water      | 4    | 5     | minz is 3 for the value 2, 4, 5.    |
 |       |                                     |       |           |                |      |       | minz is 5 for the value 6.          |
 |       |                                     |       |           |                |      |       | delete the futures with status == 1 |
 +-------+-------------------------------------+-------+-----------+----------------+------+-------+-------------------------------------+
-| 17    | unmap_pop_p                         | point | Places    | un_popp        | 3    | 5     | POPTYP 1, 2 or                      |
+| 16    | unmap_pop_p                         | point | Places    | un_popp        | 3    | 5     | POPTYP 1, 2 or                      |
 |       |                                     |       |           |                |      |       | (POPTYP 3 and SCL_ID 10).           |
 |       |                                     |       |           |                |      |       | In addition, 3 cities are removed.  |
 +-------+-------------------------------------+-------+-----------+----------------+------+-------+-------------------------------------+
-| 18    | custom_ne_10m_bathymetry_a          | area  | Base      | bathymetry     | 2    | 5     |                                     |
+| 17    | custom_ne_10m_bathymetry_a          | area  | Base      | bathymetry     | 2    | 5     |                                     |
 +-------+-------------------------------------+-------+-----------+----------------+------+-------+-------------------------------------+
 
 

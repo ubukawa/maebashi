@@ -2,30 +2,35 @@ filter:
   - all
   - - '=='
     - poptyp
-    - 1
-id: pt-place-capitals1
+    - 3
+id: pt-place-capitals3
 layout:
   icon-allow-overlap: true
-  icon-image: PPL_National
-  icon-size: 1
+  icon-image: PPL_Territorial
+  icon-size:
+    stops:
+      - - 4
+        - 0.75
+      - - 6
+        - 1
   text-allow-overlap: true
   text-field: '{cartolb}'
   text-font:
-    - sans
+    - NotoSans-Regular
   text-offset:
     - 1
     - 1
   text-optional: true
   text-size:
     stops:
-      - - 3
-        - 9
       - - 4
-        - 9.1
+        - 9.33333
       - - 5
         - 10
+      - - 6
+        - 11
 maxzoom: 6
-minzoom: 3.89
+minzoom: 4
 paint:
   text-color: '#3E3F40'
   text-halo-color: rgba(255, 255, 255, 0.8)

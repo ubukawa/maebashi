@@ -19,11 +19,13 @@ layout:
   text-size:
     stops:
       - - 3
-        - 8
+        - 8.333
       - - 4
-        - 12
+        - 9
       - - 5
-        - 13
+        - 11
+      - - 6
+        - 12
 maxzoom: 6
 minzoom: 1.56
 paint:

@@ -8,7 +8,7 @@ layout:
   text-allow-overlap: true
   text-field: '{textstring}'
   text-font:
-    - Open Sans Semibold Italic
+    - NotoSansDisplay-MediumItalic
   text-optional: true
   text-size:
     stops:

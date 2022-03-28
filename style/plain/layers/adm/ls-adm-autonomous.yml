@@ -3,15 +3,18 @@ filter:
   - - '=='
     - bdytyp
     - 8
-id: ls-adm-autonomous-halo
+id: ls-adm-autonomous
 layout:
   line-cap: round
   line-join: round
 maxzoom: 6
 minzoom: 4.89
 paint:
-  line-color: rgba(230, 230, 223, 0.65)
-  line-width: 4.09
+  line-color: '#737B80'
+  line-dasharray:
+    - 6.66667
+    - 4
+  line-width: 1
 source: v
 source-layer: bndl
 type: line

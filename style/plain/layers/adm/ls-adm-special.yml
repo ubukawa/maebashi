@@ -2,8 +2,8 @@ filter:
   - all
   - - '=='
     - bdytyp
-    - 3
-id: ls-adm-armistice
+    - 2
+id: ls-adm-special
 layout:
   line-cap: round
   line-join: round
@@ -13,7 +13,7 @@ paint:
   line-color:
     stops:
       - - 3
-        - '#737C80'
+        - '#737B80'
       - - 4
         - '#454A4C'
       - - 5
@@ -21,21 +21,25 @@ paint:
   line-dasharray:
     stops:
       - - 3
-        - - 8
-          - 5
+        - - 2
+          - 2
       - - 4
-        - - 12
-          - 5
+        - - 4
+          - 2
   line-width:
     stops:
       - - 1
-        - 0.2
+        - 0.133333
       - - 2
-        - 0.3
+        - 0.333333
       - - 3
-        - 0.6
+        - 0.5
       - - 4
         - 0.666667
+      - - 5
+        - 1
+      - - 6
+        - 1.33333
 source: v
 source-layer: bndl
 type: line
